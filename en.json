@@ -10,5 +10,7 @@
     "password_label": "Password",
     "login_button": "Login",
     "invalid_captcha": "Please enter a valid 6-digit captcha.",
-    "nginx_required_error": "This application requires NGINX server. Please use NGINX to run this application."
+    "nginx_required_error": "This application requires NGINX server. Please use NGINX to run this application.",
+    "login_failed": "Invalid username or password.",
+    "invalid_request": "Invalid request method."
 }
