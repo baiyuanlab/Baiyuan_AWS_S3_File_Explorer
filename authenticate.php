@@ -1,6 +1,8 @@
 <?php
 session_start();
+// 載入 Composer 的自動加載文件
 require 'vendor/autoload.php';
+// 載入翻譯文件
 include 'load_translations.php';
 
 use Dotenv\Dotenv;
