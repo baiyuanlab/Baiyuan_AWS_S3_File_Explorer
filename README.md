@@ -7,3 +7,5 @@ Baiyuan AWS S3 File Explorer 是一款高效、易用的工具，專為管理 AW
 # 2. 安裝必要的 PHP 套件
 composer require vlucas/phpdotenv\
 composer require aws/aws-sdk-php
+# 3. 配置 .env 檔案
+在專案根目錄下建立 .env 檔案，並填寫您的 S3 憑證相關資訊
