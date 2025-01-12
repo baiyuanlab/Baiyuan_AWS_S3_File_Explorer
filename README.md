@@ -9,3 +9,5 @@ composer require vlucas/phpdotenv\
 composer require aws/aws-sdk-php
 # 3. 配置 .env 檔案
 在專案根目錄下建立 .env 檔案，並填寫您的 S3 憑證相關資訊
+# 4. 建立翻譯檔案
+在 translations 目錄下建立 en.json 和 zh_tw.json 檔案
