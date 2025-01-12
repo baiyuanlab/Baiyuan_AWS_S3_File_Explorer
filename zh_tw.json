@@ -1,0 +1,14 @@
+{
+    "php_version_error": "需要 PHP 8.3.0 或更高版本。請更新您的 PHP 版本。",
+    "mysql_version_error": "需要 MySQL 8.0 或更高版本。請更新您的 MySQL 版本。",
+    "settings_saved": "設置保存成功。",
+    "invalid_s3_access_key": "無效的 S3 訪問密鑰 ID。",
+    "invalid_s3_secret_key": "無效的 S3 秘密訪問密鑰。",
+    "invalid_s3_bucket_name": "無效的 S3 存儲桶名稱。",
+    "captcha_label": "驗證碼",
+    "username_label": "使用者名稱",
+    "password_label": "密碼",
+    "login_button": "登入",
+    "invalid_captcha": "請輸入有效的6位數驗證碼。",
+    "nginx_required_error": "此應用程式需要 NGINX 伺服器。請使用 NGINX 運行此應用程式。"
+}
