@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script>
+        function validateCaptcha(translations) {
+            var captchaInput = document.getElementById('captcha').value;
+            if (captchaInput.length === 6) {
+                document.getElementById('username').disabled = false;
+                document.getElementById('password').disabled = false;
+            } else {
+                document.getElementById('username').disabled = true;
+                document.getElementById('password').disabled = true;
+                alert(translations['invalid_captcha']);
+            }
+        }
+    </script>
+</head>
+<body>
+    <?php
+    include 'load_translations.php';
+    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
+    $translations = loadTranslations($lang);
+    ?>
+    <form method="post" action="authenticate.php">
+        <label for="captcha"><?php echo $translations['captcha_label']; ?>:</label>
+        <input type="text" id="captcha" name="captcha" oninput="validateCaptcha(<?php echo htmlspecialchars(json_encode($translations)); ?>)" required><br>
+
+        <label for="username"><?php echo $translations['username_label']; ?>:</label>
+        <input type="text" id="username" name="username" disabled required><br>
+
+        <label for="password"><?php echo $translations['password_label']; ?>:</label>
+        <input type="password" id="password" name="password" disabled required><br>
+
+        <input type="submit" value="<?php echo $translations['login_button']; ?>">
+    </form>
+</body>
+</html>
