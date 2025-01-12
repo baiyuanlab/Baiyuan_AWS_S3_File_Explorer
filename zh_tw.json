@@ -10,5 +10,7 @@
     "password_label": "密碼",
     "login_button": "登入",
     "invalid_captcha": "請輸入有效的6位數驗證碼。",
-    "nginx_required_error": "此應用程式需要 NGINX 伺服器。請使用 NGINX 運行此應用程式。"
+    "nginx_required_error": "此應用程式需要 NGINX 伺服器。請使用 NGINX 運行此應用程式。",
+    "login_failed": "無效的用戶名或密碼。",
+    "invalid_request": "無效的請求方法。"
 }
